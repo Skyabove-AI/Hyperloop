@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyperloop Plaza — Bastrop, TX | Café, Pub, Salon, Pottery & Pickleball</title>
+<meta name="description" content="Hyperloop Plaza on FM 1209 in Bastrop, Texas is a bodega and café, a pub, a salon, a pottery studio, and pickleball under one roof. Open to the public. Free parking. Family friendly. ~30 minutes from Austin.">
+<link rel="canonical" href="https://www.hyperloopplaza.com">
+<meta property="og:title" content="Hyperloop Plaza — Bastrop, TX">
+<meta property="og:description" content="A glimpse of the future, with a small-town welcome. Café, pub, salon, pottery & pickleball in Bastrop, TX.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.hyperloopplaza.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Hyperloop Plaza",
+  "description":"A community plaza in Bastrop, Texas with a bodega and café, a pub, a salon, a pottery studio, pickleball courts, and a playground. Open to the public.",
+  "url":"https://www.hyperloopplaza.com",
+  "telephone":"",
+  "address":{"@type":"PostalAddress","streetAddress":"865 FM 1209","addressLocality":"Bastrop","addressRegion":"TX","postalCode":"78602","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":30.1905,"longitude":-97.4292},
+  "sameAs":["https://x.com/HyperloopPlaza","https://www.instagram.com/hyperloopplaza","https://www.facebook.com/hyperloopplaza"],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"20:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"08:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"20:00"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Is Hyperloop Plaza open to the public?","acceptedAnswer":{"@type":"Answer","text":"Yes. Everyone is welcome at Hyperloop Plaza. You do not need to work at The Boring Company or have any affiliation to visit, eat, shop, book a service, or play."}},
+    {"@type":"Question","name":"Where is Hyperloop Plaza?","acceptedAnswer":{"@type":"Answer","text":"Hyperloop Plaza is at 865 FM 1209 in Bastrop, Texas 78602, about 30 minutes east of Austin near The Boring Company, SpaceX, and X facilities."}},
+    {"@type":"Question","name":"What is there to do at Hyperloop Plaza?","acceptedAnswer":{"@type":"Answer","text":"You can grab coffee and groceries at Boring Bodega, eat and drink at Prufrock Pub, get a haircut or nails done at His & Hers Salon, paint pottery at Cafe Monet on weekends, rent a pickleball court, and let the kids enjoy the playground and candy shop."}},
+    {"@type":"Question","name":"Is Hyperloop Plaza family friendly?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is a playground, a candy shop, weekend pottery painting for all ages, and pickleball courts, plus indoor and outdoor seating at the café."}},
+    {"@type":"Question","name":"Is there parking at Hyperloop Plaza?","acceptedAnswer":{"@type":"Answer","text":"Yes, free parking is available on site."}}
+  ]
+}
+</script>
+<style>
+  :root{
+    --sand:#F4ECDB;
+    --sand-2:#EFE5D0;
+    --cream:#FFFCF5;
+    --ink:#16263F;
+    --ink-soft:#3A4A60;
+    --sun:#E9613A;
+    --sun-deep:#CE4F2C;
+    --gold:#F1AE33;
+    --teal:#1E7A6E;
+    --coral:#DC6A86;
+    --blue:#5777BC;
+    --line:rgba(22,38,63,.12);
+    --line-soft:rgba(22,38,63,.07);
+    --shadow:0 18px 44px -22px rgba(22,38,63,.40);
+    --maxw:1160px;
+    --display:"Bricolage Grotesque",system-ui,sans-serif;
+    --body:"Hanken Grotesk",system-ui,sans-serif;
+    --mono:"Space Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--sand);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:17px;line-height:1.62;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.04;letter-spacing:-.018em}
+  a{color:inherit}
+  .mono{font-family:var(--mono)}
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;font-weight:700;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--sun-deep);
+  }
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-weight:700;
+    font-size:16px;letter-spacing:-.01em;padding:14px 24px;border-radius:999px;text-decoration:none;
+    border:2px solid transparent;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s}
+  .btn-primary{background:var(--sun);color:#fff}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(233,97,58,.7)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--sand)}
+  .btn-sm{font-size:14px;padding:10px 18px}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:60;background:rgba(244,236,219,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .logo{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:-.02em}
+  .logo .mk{width:26px;height:26px;flex:none}
+  .navlinks{display:flex;align-items:center;gap:26px}
+  .navlinks a{text-decoration:none;font-weight:600;font-size:15px;color:var(--ink-soft);transition:color .15s}
+  .navlinks a:hover{color:var(--ink)}
+  .navlinks .btn{color:#fff}
+  .navtoggle{display:none;background:none;border:0;cursor:pointer;padding:6px}
+  .navtoggle span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:.2s}
+  @media(max-width:860px){
+    .navlinks{position:fixed;inset:66px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;
+      background:var(--sand);border-bottom:1px solid var(--line);padding:8px 0;transform:translateY(-130%);transition:transform .28s ease;box-shadow:var(--shadow)}
+    .navlinks.open{transform:none}
+    .navlinks a{padding:14px 26px;font-size:17px;border-top:1px solid var(--line-soft)}
+    .navlinks .btn{margin:12px 26px}
+    .navtoggle{display:block}
+  }
+
+  /* hero */
+  .hero{position:relative;padding:64px 0 40px;overflow:hidden}
+  .hero .wrap{position:relative;z-index:3;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+  @media(max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:8px}}
+  .hero h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,6.6vw,74px);max-width:13ch;margin:18px 0 0}
+  .hero h1 .u{color:var(--sun)}
+  .hero .sub{font-size:clamp(17px,2.1vw,20px);color:var(--ink-soft);max-width:46ch;margin-top:20px}
+  .hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+  .hero .addr{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);margin-top:26px;letter-spacing:.02em}
+  .status{display:inline-flex;align-items:center;gap:9px;background:var(--cream);border:1px solid var(--line);
+    border-radius:999px;padding:8px 15px 8px 13px;font-size:14px;font-weight:600;box-shadow:var(--shadow)}
+  .status .dot{width:9px;height:9px;border-radius:50%;background:#bbb;flex:none}
+  .status.is-open .dot{background:var(--teal);box-shadow:0 0 0 0 rgba(30,122,110,.5);animation:pulse 2.4s infinite}
+  .status.is-closed .dot{background:var(--sun)}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(30,122,110,.45)}70%{box-shadow:0 0 0 8px rgba(30,122,110,0)}100%{box-shadow:0 0 0 0 rgba(30,122,110,0)}}
+
+  .portal{position:relative;display:flex;justify-content:center}
+  .portal svg{width:100%;max-width:380px;height:auto;display:block}
+  @media(max-width:880px){.portal{margin:6px auto 0;max-width:320px}}
+  .portal .float{position:absolute;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;
+    background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:5px 11px;box-shadow:var(--shadow)}
+  .portal .f1{top:14%;left:-6%;color:var(--teal)}
+  .portal .f2{bottom:20%;right:-4%;color:var(--sun-deep)}
+
+  /* facts marquee */
+  .facts{background:var(--ink);color:var(--sand);overflow:hidden;border-top:3px solid var(--gold)}
+  .facts .track{display:flex;gap:0;white-space:nowrap;animation:slide 32s linear infinite}
+  .facts .track span{font-family:var(--display);font-weight:700;font-size:17px;padding:16px 26px;display:inline-flex;align-items:center;gap:26px;letter-spacing:-.01em}
+  .facts .track span::after{content:"✦";color:var(--gold);font-size:13px}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.facts .track{animation:none}}
+
+  /* generic section */
+  section{padding:84px 0}
+  .sec-head{max-width:60ch;margin-bottom:42px}
+  .sec-head h2{font-size:clamp(28px,4.4vw,46px);margin-top:12px}
+  .sec-head p{font-size:18px;color:var(--ink-soft);margin-top:14px}
+
+  /* venues */
+  #venues{background:var(--sand-2)}
+  .vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:900px){.vgrid{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.vgrid{grid-template-columns:1fr}}
+  .vcard{background:var(--cream);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .22s ease}
+  .vcard:hover{transform:translateY(-4px)}
+  .vcard .cap{height:118px;border-radius:120px 120px 0 0/74px 74px 0 0;display:flex;align-items:flex-end;justify-content:center;position:relative;margin:0 0 0 0}
+  .vcard .cap .ic{width:42px;height:42px;color:#fff;margin-bottom:18px}
+  .vcard .cap .tagm{position:absolute;top:14px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.92)}
+  .vbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+  .vbody h3{font-size:23px}
+  .vbody .vtag{font-family:var(--mono);font-size:12px;color:var(--ink-soft);margin:3px 0 12px}
+  .vbody p{font-size:15px;color:var(--ink-soft);flex:1}
+  .vhours{display:flex;align-items:center;gap:8px;margin:16px 0 18px;font-size:13.5px;font-weight:600}
+  .vhours .dot{width:8px;height:8px;border-radius:50%;background:#c3bba9;flex:none}
+  .vhours.is-open .dot{background:var(--teal)}
+  .vhours.is-closed .dot{background:var(--sun)}
+  .vhours .muted{color:var(--ink-soft);font-weight:500}
+  .cap-bodega{background:linear-gradient(135deg,var(--gold),#E08E1E)}
+  .cap-pub{background:linear-gradient(135deg,var(--teal),#155f55)}
+  .cap-salon{background:linear-gradient(135deg,var(--coral),#c14e6c)}
+  .cap-monet{background:linear-gradient(135deg,var(--blue),#3f5aa0)}
+  .cap-play{background:linear-gradient(135deg,var(--sun),var(--sun-deep))}
+
+  /* plan your visit */
+  #plan{background:var(--ink);color:var(--sand)}
+  #plan .eyebrow{color:var(--gold)}
+  #plan .sec-head h2{color:var(--cream)}
+  #plan .sec-head p{color:#C8D0DC}
+  .plan-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:30px;align-items:start}
+  @media(max-width:860px){.plan-grid{grid-template-columns:1fr}}
+  .timeline{display:flex;flex-direction:column}
+  .tstep{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:20px 0;border-top:1px solid rgba(255,255,255,.13)}
+  .tstep:first-child{border-top:0}
+  .tstep .tt{font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.08em;color:var(--gold);padding-top:4px}
+  .tstep h4{font-family:var(--display);font-weight:700;font-size:19px;color:var(--cream)}
+  .tstep p{font-size:14.5px;color:#C8D0DC;margin-top:4px}
+  .plancard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:26px}
+  .plancard h3{color:var(--cream);font-size:20px}
+  .planmap{margin-top:18px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.16);background:
+     radial-gradient(120% 90% at 70% 20%, rgba(241,174,51,.22), transparent 60%),
+     linear-gradient(160deg,#1d3553,#142337);height:150px;position:relative}
+  .planmap .pin{position:absolute;top:54%;left:46%;width:16px;height:16px;border-radius:50% 50% 50% 0;background:var(--sun);transform:rotate(-45deg);box-shadow:0 0 0 6px rgba(233,97,58,.22)}
+  .planmap .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:30px 30px}
+  .planlist{list-style:none;margin:16px 0 22px;display:flex;flex-direction:column;gap:9px;font-size:14.5px;color:#D4DBE5}
+  .planlist li{display:flex;gap:10px}
+  .planlist li b{color:var(--gold);font-family:var(--mono);font-size:12px;font-weight:700;flex:none;width:74px;letter-spacing:.04em}
+  .goodfor{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .goodfor span{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:5px 11px;color:#C8D0DC}
+
+  /* events */
+  .evlist{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media(max-width:680px){.evlist{grid-template-columns:1fr}}
+  .ev{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:22px 24px;display:flex;gap:16px;align-items:flex-start}
+  .ev .cad{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--teal);border-radius:8px;padding:8px 10px;flex:none;text-align:center;min-width:64px}
+  .ev:nth-child(2) .cad{background:var(--coral)}
+  .ev:nth-child(3) .cad{background:var(--blue)}
+  .ev:nth-child(4) .cad{background:var(--gold);color:var(--ink)}
+  .ev h4{font-family:var(--display);font-weight:700;font-size:18px}
+  .ev p{font-size:14px;color:var(--ink-soft);margin-top:3px}
+
+  /* capture / loop */
+  #loop{background:linear-gradient(160deg,var(--sun),var(--sun-deep));color:#fff}
+  .loopwrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  @media(max-width:780px){.loopwrap{grid-template-columns:1fr;gap:24px}}
+  #loop .eyebrow{color:#FFE3D5}
+  #loop h2{font-size:clamp(28px,4.4vw,44px);color:#fff;margin-top:10px}
+  #loop p.l{font-size:18px;color:#FFE7DC;margin-top:14px;max-width:42ch}
+  .signup{background:var(--cream);border-radius:20px;padding:26px;box-shadow:var(--shadow);color:var(--ink)}
+  .signup label{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);display:block;margin-bottom:7px}
+  .signup input{width:100%;font-family:var(--body);font-size:16px;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);margin-bottom:15px}
+  .signup input:focus{outline:none;border-color:var(--sun)}
+  .signup .btn{width:100%;justify-content:center}
+  .signup .fine{font-size:12.5px;color:var(--ink-soft);margin-top:12px;text-align:center}
+  .signup .ok{display:none;text-align:center;padding:14px 0}
+  .signup .ok h3{font-size:22px}
+  .signup .ok p{font-size:14.5px;color:var(--ink-soft);margin-top:6px}
+  .signup.done .form{display:none}
+  .signup.done .ok{display:block}
+  .pass{margin-top:18px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:#FFE3D5}
+  .pass b{color:#fff}
+
+  /* visit / footer */
+  #visit{background:var(--sand-2)}
+  .visit-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px}
+  @media(max-width:820px){.visit-grid{grid-template-columns:1fr;gap:30px}}
+  .hours-table{width:100%;border-collapse:collapse;background:var(--cream);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .hours-table th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;color:var(--ink-soft);padding:14px 16px;border-bottom:1px solid var(--line)}
+  .hours-table td{padding:13px 16px;font-size:14.5px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  .hours-table tr:last-child td{border-bottom:0}
+  .hours-table .vn{font-weight:700;font-family:var(--display)}
+  .hours-table .now{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.04em}
+  .hours-table .now.is-open{color:var(--teal)}
+  .hours-table .now.is-closed{color:var(--sun-deep)}
+  .where h3{font-size:22px;margin-bottom:6px}
+  .where .ad{font-family:var(--mono);font-size:14px;color:var(--ink-soft);line-height:1.7}
+  .where .btn{margin-top:18px}
+
+  footer{background:var(--ink);color:var(--sand);padding:46px 0 36px}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-start}
+  footer .logo{color:var(--sand)}
+  footer .fcol h5{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9DB0C4;margin-bottom:12px}
+  footer .fcol a{display:block;text-decoration:none;color:#D4DBE5;font-size:15px;padding:4px 0}
+  footer .fcol a:hover{color:#fff}
+  footer .socials{display:flex;gap:10px;margin-top:18px}
+  footer .socials a{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,255,255,.18);color:#D4DBE5;padding:0;transition:background .18s,color .18s,border-color .18s}
+  footer .socials a:hover{background:var(--sun);border-color:var(--sun);color:#fff}
+  footer .socials svg{width:18px;height:18px}
+  footer .legal{width:100%;border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:20px;font-size:13px;color:#9DB0C4;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  /* faq */
+  .faq{max-width:780px;margin:0 auto}
+  .qa{border-bottom:1px solid var(--line)}
+  .qa button{width:100%;background:none;border:0;text-align:left;cursor:pointer;padding:20px 40px 20px 0;position:relative;font-family:var(--display);font-weight:700;font-size:19px;color:var(--ink)}
+  .qa button::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font-family:var(--body);font-weight:400;font-size:26px;color:var(--sun);transition:transform .2s}
+  .qa.open button::after{transform:translateY(-50%) rotate(45deg)}
+  .qa .ans{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .qa .ans p{padding:0 0 20px;font-size:16px;color:var(--ink-soft);max-width:64ch}
+  .qa.open .ans{max-height:240px}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+  .rv.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.status.is-open .dot{animation:none}}
+  ::selection{background:var(--sun);color:#fff}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <svg class="mk" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 36 V20 a14 14 0 0 1 28 0 V36" fill="none" stroke="#E9613A" stroke-width="3.4"/><path d="M13 36 V21 a7 7 0 0 1 14 0 V36" fill="none" stroke="#F1AE33" stroke-width="3"/><circle cx="20" cy="22" r="3" fill="#16263F"/></svg>
+      Hyperloop Plaza
+    </a>
+    <button class="navtoggle" id="navtoggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="navlinks" id="navlinks">
+      <a href="#venues">Venues</a>
+      <a href="#plan">Plan Your Visit</a>
+      <a href="#events">What's On</a>
+      <a href="#visit">Hours &amp; Location</a>
+      <a class="btn btn-primary btn-sm" href="#plan">Plan a visit</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Bastrop, Texas · FM 1209 · Open to the public</span>
+      <h1>A glimpse of the future, with a <span class="u">small-town welcome.</span></h1>
+      <p class="sub">Built by The Boring Company on the edge of Bastrop, Hyperloop Plaza is a bodega, a pub, a salon, a pottery studio, and pickleball, all under one roof. Come for the curiosity. Stay for the coffee.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#plan">Plan your visit</a>
+        <a class="status" id="heroStatus" href="#visit"><span class="dot"></span><span id="heroStatusText">Checking hours…</span></a>
+      </div>
+      <p class="addr">865 FM 1209 · Bastrop, TX 78602 · Free parking · ~30 min from Austin</p>
+    </div>
+    <div class="portal">
+      <span class="float f1">FM 1209</span>
+      <span class="float f2">You are here</span>
+      <svg viewBox="0 0 400 470" aria-hidden="true">
+        <defs><radialGradient id="glow" cx="50%" cy="62%" r="55%"><stop offset="0%" stop-color="#FFF1CE"/><stop offset="100%" stop-color="#FBD37A"/></radialGradient></defs>
+        <path d="M30 462 V200 A170 170 0 0 1 370 200 V462 Z" fill="#16263F"/>
+        <path d="M64 462 V200 A136 136 0 0 1 336 200 V462 Z" fill="#1E7A6E"/>
+        <path d="M98 462 V200 A102 102 0 0 1 302 200 V462 Z" fill="#E9613A"/>
+        <path d="M132 462 V200 A68 68 0 0 1 268 200 V462 Z" fill="#F1AE33"/>
+        <path d="M166 462 V200 A34 34 0 0 1 234 200 V462 Z" fill="url(#glow)"/>
+        <circle cx="200" cy="226" r="15" fill="#FFFDF6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS MARQUEE -->
+<div class="facts" aria-hidden="true">
+  <div class="track" id="factsTrack">
+    <span>Five spots under one roof</span><span>Bodega &amp; café</span><span>Prufrock Pub</span><span>His &amp; Hers Salon</span><span>Cafe Monet pottery</span><span>Pickleball courts</span><span>Playground</span><span>Candy shop</span><span>Free parking</span><span>Family friendly</span>
+    <span>Five spots under one roof</span><span>Bodega &amp; café</span><span>Prufrock Pub</span><span>His &amp; Hers Salon</span><span>Cafe Monet pottery</span><span>Pickleball courts</span><span>Playground</span><span>Candy shop</span><span>Free parking</span><span>Family friendly</span>
+  </div>
+</div>
+
+<!-- VENUES -->
+<section id="venues">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">What's inside</span>
+      <h2>Five reasons to pull over.</h2>
+      <p>Everything at the Plaza is open to everyone. Pick a spot, or make a whole day of it.</p>
+    </div>
+    <div class="vgrid">
+
+      <article class="vcard rv">
+        <div class="cap cap-bodega">
+          <span class="tagm">Grocery · Café</span>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M17 9h2a2 2 0 0 1 0 5h-2"/><path d="M7 4c0 1-1 1-1 2M11 4c0 1-1 1-1 2"/></svg>
+        </div>
+        <div class="vbody">
+          <h3>Boring Bodega</h3>
+          <div class="vtag">Coffee, groceries &amp; a place to sit</div>
+          <p>From farm-fresh to future-fancy. Start the morning with a cup of coffee, stock the pantry, grab a sandwich, then settle in at indoor or outdoor seating.</p>
+          <div class="vhours" data-venue="bodega"><span class="dot"></span><span class="now">…</span></div>
+          <a class="btn btn-ghost btn-sm" href="#plan">See what's in store</a>
+        </div>
+      </article>
+
+      <article class="vcard rv">
+        <div class="cap cap-pub">
+          <span class="tagm">Food &amp; Drink</span>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 17v3M9 21h6"/></svg>
+        </div>
+        <div class="vbody">
+          <h3>Prufrock Pub</h3>
+          <div class="vtag">The heart of the Plaza</div>
+          <p>Cold pints, curious cocktails, and a kitchen for whatever fuels your next adventure. Friendly room, easy patio, perfect for a Friday gathering.</p>
+          <div class="vhours" data-venue="pub"><span class="dot"></span><span class="now">…</span></div>
+          <a class="btn btn-ghost btn-sm" href="#plan">View the menu</a>
+        </div>
+      </article>
+
+      <article class="vcard rv">
+        <div class="cap cap-salon">
+          <span class="tagm">Hair &amp; Nails</span>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8 8l12 8M8 16L20 8"/></svg>
+        </div>
+        <div class="vbody">
+          <h3>His &amp; Hers Salon</h3>
+          <div class="vtag">Locally owned since 2019</div>
+          <p>Timeless cuts, color, and care for the whole family, plus manicures and pedicures. A fresh look or a quiet retreat, whichever you came for.</p>
+          <div class="vhours" data-venue="salon"><span class="dot"></span><span class="now">…</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://www.hisandherhlp.com" target="_blank" rel="noopener">Book an appointment</a>
+        </div>
+      </article>
+
+      <article class="vcard rv">
+        <div class="cap cap-monet">
+          <span class="tagm">Pottery Studio</span>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0 0 18c1.5 0 2-1 2-2s-.8-1.5-.8-2.4c0-.9.7-1.6 1.6-1.6H18a3 3 0 0 0 3-3c0-3.9-4-6.4-9-6.4z"/><circle cx="8" cy="9" r="1"/><circle cx="8" cy="14" r="1"/><circle cx="12" cy="6.5" r="1"/></svg>
+        </div>
+        <div class="vbody">
+          <h3>Cafe Monet</h3>
+          <div class="vtag">Paint-your-own pottery · weekends</div>
+          <p>An enchanting pottery painting experience that captures the essence of artistic expression. All ages welcome. Open Saturday and Sunday.</p>
+          <div class="vhours" data-venue="monet"><span class="dot"></span><span class="now">…</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://cafemonet.org/bastrop/reservation/" target="_blank" rel="noopener">Reserve a table</a>
+        </div>
+      </article>
+
+      <article class="vcard rv">
+        <div class="cap cap-play">
+          <span class="tagm">Pickleball · Play</span>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="5.5"/><path d="M13 13l6 6"/><circle cx="9" cy="9" r="1"/><circle cx="11" cy="7" r="1"/><circle cx="7" cy="11" r="1"/></svg>
+        </div>
+        <div class="vbody">
+          <h3>Courts &amp; Playground</h3>
+          <div class="vtag">Pickleball, playground &amp; candy</div>
+          <p>Rent a pickleball court, let the kids loose on the playground, and raid the candy shop on the way out. The fun part of the future.</p>
+          <div class="vhours"><span class="dot is-open" style="background:var(--teal)"></span><span class="now">Courts available daily · reserve ahead</span></div>
+          <a class="btn btn-ghost btn-sm" href="#events">See what's on</a>
+        </div>
+      </article>
+
+      <article class="vcard rv" style="justify-content:center;align-items:center;text-align:center;background:transparent;border:2px dashed var(--line);box-shadow:none">
+        <div class="vbody" style="justify-content:center">
+          <h3 style="font-size:20px">New things keep opening.</h3>
+          <p style="flex:none;margin-top:8px">If you build it, they will come. Get the next drop before anyone else.</p>
+          <a class="btn btn-primary btn-sm" href="#loop" style="margin-top:16px">Stay in the loop</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PLAN YOUR VISIT -->
+<section id="plan">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Plan your visit</span>
+      <h2>Make a day of it.</h2>
+      <p>The Plaza is built for lingering. Here's one easy way to spend a few hours, morning to evening.</p>
+    </div>
+    <div class="plan-grid">
+      <div class="timeline rv">
+        <div class="tstep"><div class="tt">MORNING</div><div><h4>Coffee &amp; a slow start</h4><p>Grab a coffee and a pastry at Boring Bodega, then let the kids burn off energy at the playground.</p></div></div>
+        <div class="tstep"><div class="tt">MIDDAY</div><div><h4>Lunch &amp; a match</h4><p>Lunch at Prufrock Pub, then book a pickleball court and play a few games in the Texas sun.</p></div></div>
+        <div class="tstep"><div class="tt">AFTERNOON</div><div><h4>Make something</h4><p>Paint your own pottery at Cafe Monet on the weekend, or freshen up with a cut at His &amp; Hers Salon.</p></div></div>
+        <div class="tstep"><div class="tt">EVENING</div><div><h4>Wind down</h4><p>Cocktails and dinner back at Prufrock, and a stop at the candy shop for the road home.</p></div></div>
+      </div>
+      <aside class="plancard rv">
+        <h3>Getting here</h3>
+        <div class="planmap"><div class="grid"></div><div class="pin"></div></div>
+        <ul class="planlist">
+          <li><b>Address</b><span>865 FM 1209, Bastrop, TX 78602</span></li>
+          <li><b>From ATX</b><span>About 30 minutes east of Austin</span></li>
+          <li><b>Parking</b><span>Free, on site</span></li>
+        </ul>
+        <div class="goodfor">
+          <span>Families</span><span>Date day</span><span>Groups</span><span>Road trips</span>
+        </div>
+        <a class="btn btn-primary" style="width:100%;justify-content:center;margin-top:20px" href="https://www.google.com/maps/dir/?api=1&destination=865+FM+1209+Bastrop+TX+78602" target="_blank" rel="noopener">Get directions</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">What's on</span>
+      <h2>There's always something happening.</h2>
+      <p>Leagues, classes, and pub nights all year. Get the full schedule sent straight to you.</p>
+    </div>
+    <div class="evlist">
+      <div class="ev rv"><div class="cad">Weekly</div><div><h4>Pickleball leagues</h4><p>Casual and competitive ladders on the Plaza courts. All skill levels welcome.</p></div></div>
+      <div class="ev rv"><div class="cad">Thurs</div><div><h4>Pub trivia at Prufrock</h4><p>Round up a team, win a round. The smartest night of the week in Bastrop.</p></div></div>
+      <div class="ev rv"><div class="cad">Wknd</div><div><h4>Pottery weekends</h4><p>Drop in to Cafe Monet, pick a piece, and paint. Great for birthdays and groups.</p></div></div>
+      <div class="ev rv"><div class="cad">Special</div><div><h4>Community &amp; family days</h4><p>Seasonal events, kids' activities, and the occasional very-Bastrop surprise.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STAY IN THE LOOP -->
+<section id="loop">
+  <div class="wrap">
+    <div class="loopwrap">
+      <div class="rv">
+        <span class="eyebrow">Stay in the loop</span>
+        <h2>First dibs on every drop.</h2>
+        <p class="l">New candy and groceries, pub specials, pottery classes, and pickleball leagues. Get the good stuff before it hits the parking lot.</p>
+        <p class="pass">Coming soon: <b>The Plaza Pass</b> — one card, every spot.</p>
+      </div>
+      <div class="signup rv" id="signup">
+        <div class="form">
+          <label for="em">Email</label>
+          <input id="em" type="email" placeholder="you@email.com" autocomplete="email">
+          <label for="ph">Mobile (optional, for text alerts)</label>
+          <input id="ph" type="tel" placeholder="(512) 555-0199" autocomplete="tel">
+          <button class="btn btn-primary" id="signupBtn" type="button">Keep me posted</button>
+          <p class="fine">The occasional drop. No spam, unsubscribe anytime.</p>
+        </div>
+        <div class="ok">
+          <h3>You're on the list. 🎉</h3>
+          <p>Watch your inbox for the next drop from the Plaza.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT / HOURS -->
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Hours &amp; location</span>
+      <h2>Drop by.</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="rv">
+        <table class="hours-table">
+          <thead><tr><th>Spot</th><th>Hours</th><th>Now</th></tr></thead>
+          <tbody>
+            <tr><td class="vn">Boring Bodega</td><td>Mon–Thu 8a–8p · Fri 8a–9p<br>Sat 10a–9p · Sun 10a–8p</td><td class="now" data-venue="bodega">…</td></tr>
+            <tr><td class="vn">Prufrock Pub</td><td>Mon–Thu 8a–8p · Fri 8a–9p<br>Sat 10a–9p · Sun 10a–8p</td><td class="now" data-venue="pub">…</td></tr>
+            <tr><td class="vn">His &amp; Hers Salon</td><td>Mon–Sat 9a–6p · Sun closed</td><td class="now" data-venue="salon">…</td></tr>
+            <tr><td class="vn">Cafe Monet</td><td>Sat &amp; Sun 12p–8p</td><td class="now" data-venue="monet">…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="where rv">
+        <h3>Find us on FM 1209</h3>
+        <p class="ad">865 FM 1209<br>Bastrop, TX 78602<br>Free parking on site<br>About 30 minutes east of Austin</p>
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=865+FM+1209+Bastrop+TX+78602" target="_blank" rel="noopener">Get directions</a>
+        <p class="ad" style="margin-top:20px">Follow along: <a href="https://x.com/HyperloopPlaza" target="_blank" rel="noopener" style="color:var(--sun-deep);font-weight:700">X</a> · <a href="https://www.instagram.com/hyperloopplaza" target="_blank" rel="noopener" style="color:var(--sun-deep);font-weight:700">Instagram</a> · <a href="https://www.facebook.com/hyperloopplaza" target="_blank" rel="noopener" style="color:var(--sun-deep);font-weight:700">Facebook</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--sand-2)">
+  <div class="wrap">
+    <div class="sec-head rv" style="text-align:center;margin-left:auto;margin-right:auto">
+      <span class="eyebrow">Good to know</span>
+      <h2>Questions, answered.</h2>
+    </div>
+    <div class="faq rv">
+      <div class="qa"><button type="button">Is Hyperloop Plaza open to the public?</button><div class="ans"><p>Yes. Everyone is welcome. You don't need to work at The Boring Company or have any affiliation to visit, eat, shop, book a service, or play.</p></div></div>
+      <div class="qa"><button type="button">Where is it, exactly?</button><div class="ans"><p>865 FM 1209, Bastrop, TX 78602, about 30 minutes east of Austin, near The Boring Company, SpaceX, and X facilities.</p></div></div>
+      <div class="qa"><button type="button">What is there to do?</button><div class="ans"><p>Grab coffee and groceries at Boring Bodega, eat and drink at Prufrock Pub, get a haircut or nails done at His &amp; Hers Salon, paint pottery at Cafe Monet on weekends, rent a pickleball court, and enjoy the playground and candy shop.</p></div></div>
+      <div class="qa"><button type="button">Is it family friendly?</button><div class="ans"><p>Very. There's a playground, a candy shop, weekend pottery for all ages, pickleball, and indoor and outdoor café seating.</p></div></div>
+      <div class="qa"><button type="button">Is there parking?</button><div class="ans"><p>Yes, free parking is available on site.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fcol" style="max-width:280px">
+      <a class="logo" href="#top" style="margin-bottom:14px">
+        <svg class="mk" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 36 V20 a14 14 0 0 1 28 0 V36" fill="none" stroke="#E9613A" stroke-width="3.4"/><path d="M13 36 V21 a7 7 0 0 1 14 0 V36" fill="none" stroke="#F1AE33" stroke-width="3"/><circle cx="20" cy="22" r="3" fill="#FFFCF5"/></svg>
+        Hyperloop Plaza
+      </a>
+      <p style="font-size:14px;color:#9DB0C4">A glimpse of the future, with a small-town welcome. Bastrop, Texas.</p>
+      <div class="socials">
+        <a href="https://x.com/HyperloopPlaza" target="_blank" rel="noopener" aria-label="Hyperloop Plaza on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="https://www.instagram.com/hyperloopplaza" target="_blank" rel="noopener" aria-label="Hyperloop Plaza on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.facebook.com/hyperloopplaza" target="_blank" rel="noopener" aria-label="Hyperloop Plaza on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h5>Visit</h5>
+      <a href="#venues">Venues</a>
+      <a href="#plan">Plan your visit</a>
+      <a href="#events">What's on</a>
+      <a href="#visit">Hours &amp; location</a>
+    </div>
+    <div class="fcol">
+      <h5>Book &amp; reserve</h5>
+      <a href="https://www.hisandherhlp.com" target="_blank" rel="noopener">His &amp; Hers Salon</a>
+      <a href="https://cafemonet.org/bastrop/reservation/" target="_blank" rel="noopener">Cafe Monet</a>
+      <a href="#loop">Get the newsletter</a>
+    </div>
+    <div class="fcol">
+      <h5>Find us</h5>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=865+FM+1209+Bastrop+TX+78602" target="_blank" rel="noopener">865 FM 1209, Bastrop, TX</a>
+      <a href="https://x.com/HyperloopPlaza" target="_blank" rel="noopener">X · @HyperloopPlaza</a>
+      <a href="https://www.instagram.com/hyperloopplaza" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/hyperloopplaza" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <div class="legal">
+      <span>© 2026 Hyperloop Plaza. Built by The Boring Company.</span>
+      <span>Bastrop, Texas · FM 1209</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- hours / open-now ---------- */
+// schedule[dayIndex] = [openHour, closeHour] in 24h, or null if closed. day 0 = Sunday.
+const schedules = {
+  bodega: [[10,20],[8,20],[8,20],[8,20],[8,20],[8,21],[10,21]],
+  pub:    [[10,20],[8,20],[8,20],[8,20],[8,20],[8,21],[10,21]],
+  salon:  [null,[9,18],[9,18],[9,18],[9,18],[9,18],[9,18]],
+  monet:  [[12,20],null,null,null,null,null,[12,20]]
+};
+const DAYS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+
+function bastropNow(){
+  // Current time in America/Chicago (Central), approximated for the visitor.
+  const p = new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+  const wd = p.find(x=>x.type==='weekday').value;
+  let h = parseInt(p.find(x=>x.type==='hour').value,10);
+  if(h===24) h=0;
+  const m = parseInt(p.find(x=>x.type==='minute').value,10);
+  return {day:DAYS.indexOf(wd), mins:h*60+m};
+}
+function fmtHour(h){
+  const ap = h>=12 ? 'PM':'AM';
+  let hr = h%12; if(hr===0) hr=12;
+  return hr+' '+ap;
+}
+function nextOpenDay(sched, fromDay){
+  for(let i=1;i<=7;i++){
+    const d=(fromDay+i)%7;
+    if(sched[d]) return {day:d, open:sched[d][0]};
+  }
+  return null;
+}
+function statusFor(key){
+  const sched=schedules[key]; const now=bastropNow();
+  const today=sched[now.day];
+  if(today){
+    const [o,c]=today;
+    if(now.mins < o*60) return {open:false, text:'Opens '+fmtHour(o)+' today'};
+    if(now.mins < c*60) return {open:true, text:'Open · closes '+fmtHour(c)};
+  }
+  const nx=nextOpenDay(sched, now.day);
+  if(nx){
+    const label = nx.day===(now.day+1)%7 ? 'tomorrow' : DAYS[nx.day];
+    return {open:false, text:'Opens '+fmtHour(nx.open)+' '+label};
+  }
+  return {open:false, text:'Closed'};
+}
+
+function paintStatus(){
+  // per-venue chips on cards
+  document.querySelectorAll('.vhours[data-venue]').forEach(el=>{
+    const s=statusFor(el.dataset.venue);
+    el.classList.toggle('is-open', s.open);
+    el.classList.toggle('is-closed', !s.open);
+    el.querySelector('.now').textContent=s.text;
+  });
+  // hours table
+  document.querySelectorAll('td.now[data-venue]').forEach(el=>{
+    const s=statusFor(el.dataset.venue);
+    el.classList.toggle('is-open', s.open);
+    el.classList.toggle('is-closed', !s.open);
+    el.textContent = s.open ? 'Open now' : 'Closed';
+  });
+  // hero (anchored on the bodega, the main everyday spot)
+  const hs=statusFor('bodega');
+  const heroEl=document.getElementById('heroStatus');
+  const heroTx=document.getElementById('heroStatusText');
+  heroEl.classList.toggle('is-open', hs.open);
+  heroEl.classList.toggle('is-closed', !hs.open);
+  heroTx.textContent = hs.open ? hs.text.replace('Open · ','Open now · ') : hs.text;
+}
+paintStatus();
+setInterval(paintStatus, 60000);
+
+/* ---------- nav toggle ---------- */
+const tgl=document.getElementById('navtoggle'), links=document.getElementById('navlinks');
+tgl.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+
+/* ---------- signup (demo, in-memory) ---------- */
+const leads=[];
+document.getElementById('signupBtn').addEventListener('click',()=>{
+  const em=document.getElementById('em');
+  const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value.trim());
+  if(!ok){ em.focus(); em.style.borderColor='var(--sun)'; return; }
+  leads.push({email:em.value.trim(), phone:document.getElementById('ph').value.trim()});
+  document.getElementById('signup').classList.add('done');
+});
+
+/* ---------- faq ---------- */
+document.querySelectorAll('.qa button').forEach(b=>{
+  b.addEventListener('click',()=>b.parentElement.classList.toggle('open'));
+});
+
+/* ---------- reveal ---------- */
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.12, rootMargin:"0px 0px -6% 0px"});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
