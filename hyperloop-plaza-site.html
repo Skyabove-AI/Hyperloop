@@ -116,6 +116,10 @@
 
   /* hero */
   .hero{position:relative;padding:64px 0 40px;overflow:hidden}
+  .hero-banner{width:100%;border-radius:18px;overflow:hidden;margin-bottom:36px;position:relative;height:320px}
+  .hero-banner img{width:100%;height:100%;object-fit:cover;display:block}
+  .hero-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(22,38,63,.4) 100%)}
+  @media(max-width:680px){.hero-banner{height:200px;border-radius:14px}}
   .hero .wrap{position:relative;z-index:3;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
   @media(max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:8px}}
   .hero h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,6.6vw,74px);max-width:13ch;margin:18px 0 0}
@@ -159,9 +163,17 @@
   @media(max-width:600px){.vgrid{grid-template-columns:1fr}}
   .vcard{background:var(--cream);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .22s ease}
   .vcard:hover{transform:translateY(-4px)}
-  .vcard .cap{height:118px;border-radius:120px 120px 0 0/74px 74px 0 0;display:flex;align-items:flex-end;justify-content:center;position:relative;margin:0 0 0 0}
-  .vcard .cap .ic{width:42px;height:42px;color:#fff;margin-bottom:18px}
-  .vcard .cap .tagm{position:absolute;top:14px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.92)}
+  .vcard .cap{height:200px;display:flex;align-items:flex-end;justify-content:center;position:relative;margin:0;overflow:hidden}
+  .vcard .cap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .vcard .cap .ic{width:42px;height:42px;color:#fff;margin-bottom:18px;position:relative;z-index:2}
+  .vcard .cap .tagm{position:absolute;top:14px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.92);z-index:2;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+  .vcard .cap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08) 0%,rgba(0,0,0,.35) 100%);z-index:1}
+  /* gallery strip */
+  .gallery-strip{padding:0;overflow:hidden;background:var(--sand)}
+  .gallery-strip .strip-track{display:flex;gap:12px;padding:24px 0;animation:stripSlide 40s linear infinite}
+  .gallery-strip .strip-track img{height:180px;width:auto;border-radius:14px;flex:none;object-fit:cover}
+  @keyframes stripSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.gallery-strip .strip-track{animation:none;overflow-x:auto}}
   .vbody{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
   .vbody h3{font-size:23px}
   .vbody .vtag{font-family:var(--mono);font-size:12px;color:var(--ink-soft);margin:3px 0 12px}
@@ -303,6 +315,9 @@
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="wrap">
+    <div class="hero-banner">
+      <img src="public/assets/hyperloop1500x500.jpeg" alt="Hyperloop Plaza entrance sign at sunset in Bastrop, Texas" loading="eager">
+    </div>
     <div>
       <span class="eyebrow">Bastrop, Texas · FM 1209 · Open to the public</span>
       <h1>A glimpse of the future, with a <span class="u">small-town welcome.</span></h1>
@@ -349,8 +364,8 @@
 
       <article class="vcard rv">
         <div class="cap cap-bodega">
+          <img src="public/assets/IMG_3954.webp" alt="Boring Bodega interior with Space Balls snacks and refrigerated drinks" loading="lazy">
           <span class="tagm">Grocery · Café</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M17 9h2a2 2 0 0 1 0 5h-2"/><path d="M7 4c0 1-1 1-1 2M11 4c0 1-1 1-1 2"/></svg>
         </div>
         <div class="vbody">
           <h3>Boring Bodega</h3>
@@ -363,8 +378,8 @@
 
       <article class="vcard rv">
         <div class="cap cap-pub">
+          <img src="public/assets/Borders-05.webp" alt="Craft beer, wine, and cider selection at Prufrock Pub" loading="lazy">
           <span class="tagm">Food &amp; Drink</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"/><path d="M12 17v3M9 21h6"/></svg>
         </div>
         <div class="vbody">
           <h3>Prufrock Pub</h3>
@@ -377,8 +392,8 @@
 
       <article class="vcard rv">
         <div class="cap cap-salon">
+          <img src="public/assets/barber.webp" alt="The Barber Maestro station at His and Hers Salon" loading="lazy">
           <span class="tagm">Hair &amp; Nails</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8 8l12 8M8 16L20 8"/></svg>
         </div>
         <div class="vbody">
           <h3>His &amp; Hers Salon</h3>
@@ -391,8 +406,8 @@
 
       <article class="vcard rv">
         <div class="cap cap-monet">
+          <img src="public/assets/Copy+of+3O6A9501-Edit.webp" alt="Hands shaping clay on a pottery wheel at Cafe Monet" loading="lazy">
           <span class="tagm">Pottery Studio</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0 0 18c1.5 0 2-1 2-2s-.8-1.5-.8-2.4c0-.9.7-1.6 1.6-1.6H18a3 3 0 0 0 3-3c0-3.9-4-6.4-9-6.4z"/><circle cx="8" cy="9" r="1"/><circle cx="8" cy="14" r="1"/><circle cx="12" cy="6.5" r="1"/></svg>
         </div>
         <div class="vbody">
           <h3>Cafe Monet</h3>
@@ -405,8 +420,8 @@
 
       <article class="vcard rv">
         <div class="cap cap-play">
+          <img src="public/assets/pickleball.jpg" alt="Pickleball courts at sunset at Hyperloop Plaza" loading="lazy">
           <span class="tagm">Pickleball · Play</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="5.5"/><path d="M13 13l6 6"/><circle cx="9" cy="9" r="1"/><circle cx="11" cy="7" r="1"/><circle cx="7" cy="11" r="1"/></svg>
         </div>
         <div class="vbody">
           <h3>Courts &amp; Playground</h3>
@@ -428,6 +443,33 @@
     </div>
   </div>
 </section>
+
+<!-- PHOTO GALLERY STRIP -->
+<div class="gallery-strip" aria-hidden="true">
+  <div class="strip-track" id="galleryTrack">
+    <img src="public/assets/F_Auqk_boAAj3lu.jpg" alt="Cybertruck in the bodega" loading="lazy">
+    <img src="public/assets/candyshop.jpg" alt="Candy shop wall" loading="lazy">
+    <img src="public/assets/Copy+of+IMG_6944.webp" alt="Pottery artist at work" loading="lazy">
+    <img src="public/assets/pickleballracqets.jpg" alt="Boring Company branded pickleball paddles" loading="lazy">
+    <img src="public/assets/Borders-03.webp" alt="Bodega snack shelves" loading="lazy">
+    <img src="public/assets/Borders-04.webp" alt="Crowd gathering outside Hyperloop Plaza" loading="lazy">
+    <img src="public/assets/minigolf.jpg" alt="Mini golf putting green at the Plaza" loading="lazy">
+    <img src="public/assets/Copy+of+3O6A9569-Edit.webp" alt="Pottery wheel close-up" loading="lazy">
+    <img src="public/assets/Copy+of+IMG_1858.webp" alt="Loading kiln with pottery" loading="lazy">
+    <img src="public/assets/Borders-06.webp" alt="Retro gaming lounge" loading="lazy">
+    <!-- duplicate for seamless loop -->
+    <img src="public/assets/F_Auqk_boAAj3lu.jpg" alt="" loading="lazy">
+    <img src="public/assets/candyshop.jpg" alt="" loading="lazy">
+    <img src="public/assets/Copy+of+IMG_6944.webp" alt="" loading="lazy">
+    <img src="public/assets/pickleballracqets.jpg" alt="" loading="lazy">
+    <img src="public/assets/Borders-03.webp" alt="" loading="lazy">
+    <img src="public/assets/Borders-04.webp" alt="" loading="lazy">
+    <img src="public/assets/minigolf.jpg" alt="" loading="lazy">
+    <img src="public/assets/Copy+of+3O6A9569-Edit.webp" alt="" loading="lazy">
+    <img src="public/assets/Copy+of+IMG_1858.webp" alt="" loading="lazy">
+    <img src="public/assets/Borders-06.webp" alt="" loading="lazy">
+  </div>
+</div>
 
 <!-- PLAN YOUR VISIT -->
 <section id="plan">
