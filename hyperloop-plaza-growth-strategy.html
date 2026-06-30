@@ -262,6 +262,17 @@
     padding:16px 30px;border-radius:4px;text-decoration:none;transition:transform .2s,box-shadow .2s}
   .cta:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(244,169,60,.28)}
   .cta .arr{font-family:var(--mono)}
+  .cta-ghost{display:inline-flex;align-items:center;gap:12px;margin-top:36px;background:transparent;color:var(--amber);
+    font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.01em;
+    padding:16px 30px;border-radius:4px;text-decoration:none;border:2px solid var(--amber);transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+  .cta-ghost:hover{background:var(--amber);color:#1a1304;transform:translateY(-2px);box-shadow:0 14px 40px rgba(244,169,60,.28)}
+  .cta-ghost .arr{font-family:var(--mono)}
+  .cta-row{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+  .hero .cta-row{justify-content:flex-start}
+  .site-preview{margin-top:40px;padding:24px 28px;border:1px solid var(--line-strong);border-radius:4px;background:rgba(244,169,60,.06);display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  .site-preview .sp-label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber)}
+  .site-preview p{font-size:15px;color:var(--txt-dim);flex:1;min-width:200px}
+  .site-preview .cta{margin-top:0;font-size:14px;padding:12px 22px;white-space:nowrap}
 
   footer{background:var(--base);border-top:1px solid var(--line);padding:40px 0}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
@@ -313,6 +324,13 @@
       <div>PREPARED&nbsp;FOR<span>Hyperloop Plaza</span></div>
       <div>PREPARED&nbsp;BY<span>SkyAbove, engineered in Bastrop</span></div>
       <div>HORIZON<span>60-day build · self-compounding loop</span></div>
+    </div>
+    <div class="site-preview">
+      <div>
+        <span class="sp-label">Proposed Website</span>
+        <p>We built the site that powers the loop. See the finished product — complete with venues, live hours, events, and email capture.</p>
+      </div>
+      <a class="cta" href="hyperloop-plaza-site.html">View the proposed site <span class="arr">→</span></a>
     </div>
   </div>
 </header>
@@ -708,7 +726,10 @@
     <span class="eyebrow" style="justify-content:center">Why SkyAbove</span>
     <h2>We're not flying in. We're <span class="lit">engineered in Bastrop.</span></h2>
     <p>Same town as the plaza, AI-native by design, and built to tie every dollar to revenue. We can be on-site this week, and the loop can be turning before the next viral post lands.</p>
-    <a class="cta" href="https://skyabove.com/contact">Book the strategy session <span class="arr">→</span></a>
+    <div class="cta-row">
+      <a class="cta" href="hyperloop-plaza-site.html">View the proposed site <span class="arr">→</span></a>
+      <a class="cta-ghost" href="https://skyabove.com/contact">Book the strategy session <span class="arr">→</span></a>
+    </div>
   </div>
 </section>
 
