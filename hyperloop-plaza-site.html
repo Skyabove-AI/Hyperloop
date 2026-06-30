@@ -115,17 +115,17 @@
   }
 
   /* hero */
-  .hero{position:relative;padding:64px 0 40px;overflow:hidden}
-  .hero-banner{width:100%;border-radius:18px;overflow:hidden;margin-bottom:36px;position:relative;height:320px}
-  .hero-banner img{width:100%;height:100%;object-fit:cover;display:block}
-  .hero-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(22,38,63,.4) 100%)}
-  @media(max-width:680px){.hero-banner{height:200px;border-radius:14px}}
+  .hero{position:relative;padding:100px 0 80px;overflow:hidden;
+    background:url('public/assets/hyperloopnight.jpg') center/cover no-repeat;color:#fff}
+  .hero::before{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(12,16,32,.55) 0%,rgba(12,16,32,.82) 100%)}
   .hero .wrap{position:relative;z-index:3}
-  .hero h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,6.6vw,74px);max-width:13ch;margin:18px 0 0}
-  .hero h1 .u{color:var(--sun)}
-  .hero .sub{font-size:clamp(17px,2.1vw,20px);color:var(--ink-soft);max-width:46ch;margin-top:20px}
+  .hero .eyebrow{color:var(--gold)}
+  .hero h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,6.6vw,74px);max-width:13ch;margin:18px 0 0;color:#fff}
+  .hero h1 .u{color:var(--gold)}
+  .hero .sub{font-size:clamp(17px,2.1vw,20px);color:rgba(255,255,255,.82);max-width:46ch;margin-top:20px}
   .hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
-  .hero .addr{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);margin-top:26px;letter-spacing:.02em}
+  .hero .addr{font-family:var(--mono);font-size:12.5px;color:rgba(255,255,255,.6);margin-top:26px;letter-spacing:.02em}
   .status{display:inline-flex;align-items:center;gap:9px;background:var(--cream);border:1px solid var(--line);
     border-radius:999px;padding:8px 15px 8px 13px;font-size:14px;font-weight:600;box-shadow:var(--shadow)}
   .status .dot{width:9px;height:9px;border-radius:50%;background:#bbb;flex:none}
@@ -307,9 +307,6 @@
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="wrap">
-    <div class="hero-banner">
-      <img src="public/assets/hyperloop1500x500.jpeg" alt="Hyperloop Plaza entrance sign at sunset in Bastrop, Texas" loading="eager">
-    </div>
     <div>
       <span class="eyebrow">Bastrop, Texas · FM 1209 · Open to the public</span>
       <h1>A glimpse of the future, with a <span class="u">small-town welcome.</span></h1>
